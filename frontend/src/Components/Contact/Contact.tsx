@@ -14,7 +14,7 @@ const Contact = ({ id, username, email, phoneNumber }: ContactInterface) => {
   const dispatch = useDispatch();
 
   const deleteContact = () => {
-    fetch(`http://localhost:3001/${id}`, {
+    fetch(`http://localhost:3450/${id}`, {
       method: "DELETE",
       headers: { "Content-type": "application/json" },
     })

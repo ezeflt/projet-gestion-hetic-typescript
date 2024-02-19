@@ -16,7 +16,7 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(()=>{
-    fetch("http://localhost:3001")
+    fetch("http://localhost:3450")
       .then(response => response.json())
       .then((responseContacts: ResponseContactsApi) => {
         if (!responseContacts.response){

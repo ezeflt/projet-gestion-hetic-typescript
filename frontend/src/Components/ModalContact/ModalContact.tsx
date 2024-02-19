@@ -85,7 +85,7 @@ const ModalContact = (props: ModalInterface) => {
     const method = props.action === ACTION.ADD ? "POST" : "PUT";
     
     try {
-      fetch("http://localhost:3001/contact", {
+      fetch("http://localhost:3450/contact", {
         method: method,
         headers: { "Content-type": "application/json" },
         body: JSON.stringify(contactData),
