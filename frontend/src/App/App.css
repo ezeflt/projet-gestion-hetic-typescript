@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  z-index: 20;
+}
+
+.page {
+  height: 100vh;
+  background-color: #282c34;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0px;
+}
+
+h1 {
+  margin: 60px;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.btn_add {
+  color: #282c34;
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.contact_container {
+  margin-top: 50px;
+  position: relative;
+  bottom: 0;
+  width: 80%;
+  border-top: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+.contact {
+  margin-top: 50px;
+  height: auto;
+  padding: 15px 0px;
+  width: 80%;
+  background: #616c83;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact .btn {
+  height: 30px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.update {
+  height: 30px;
+  padding: 0px 10px;
+  background-color: rgb(106, 165, 207);
+  cursor: pointer;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.delete {
+  height: 30px;
+  padding: 0px 10px;
+  background: red;
+  cursor: pointer;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.modal {
+  z-index: 50;
+}
+
+form {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  height: 20px;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid;
+  padding: 4px;
+}
+label {
+  padding-top: 30px;
+  text-decoration: underline;
+}
+
+input:focus {
+  outline-width: 0;
+}
+
+.alert {
+  position: absolute;
+  top: 0;
+  margin: 20px;
+  width: 80%;
+  height: 50px;
+  display: flex;
+  justify-content: start;
+  text-align: start;
+  padding-left: 30px;
+  z-index: 300;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 200px;
+  }
+  .contact .btn {
+    width: 90%;
+  }
+  .update {
+    width: 40%;
+  }
+  .delete {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact {
+    width: 90%;
+  }
+}
