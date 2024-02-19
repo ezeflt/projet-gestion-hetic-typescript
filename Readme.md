@@ -1,5 +1,5 @@
 ### Bienvenue sur l'application Contact gestion 📞😃
-| Cette applciation permet de pouvoir enregistrer ses contactes sur le web.
+| Cette application permet de pouvoir enregistrer ses contactes sur le web.
 <div>
 <img src="./screenApp.png">
 </div>
